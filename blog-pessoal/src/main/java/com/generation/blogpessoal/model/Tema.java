@@ -11,9 +11,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "tb_temas")
@@ -38,12 +36,12 @@ public class Tema {
 		this.id = id;
 	}
 
-	public String getdescricao() {
-		return getdescricao();
+	public String getDescricao() {
+	    return descricao;
 	}
 
-	public void setdescricao(String descricao) {
-		this.descricao = descricao;
+	public void setDescricao(String descricao) {
+	    this.descricao = descricao;
 	}
 
 	public List<Postagem> getPostagem() {
